@@ -8,7 +8,7 @@
 
 **Intro**
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+Spots is a social media website that allows users to post pictures and share it with their friends. This is still a mock up of the website and does not have any active links.
 
 [Link to webpage](https://mestabarbara.github.io/se_project_spots/index.html)
 
@@ -18,6 +18,10 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Images**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+The website supports websites from 320px and larger.
 
-Good luck and have fun!
+![Desktop Layout](./images/desktop_layout_screenshot.png)
+
+![Tablet Layout](./images/tablet_layout_screenshto.png)
+
+![Phone Layout](./images/phone_layout_screenshot.png)
