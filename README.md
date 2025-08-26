@@ -12,6 +12,9 @@ Spots is a social media website that allows users to post pictures and share it 
 
 [Link to webpage](https://mestabarbara.github.io/se_project_spots/index.html)
 
+**Video Review**
+[Link to Google Drive](https://drive.google.com/file/d/1u1kEtsxsSMpVN9-yrKzf0oP2mTzYcQnM/view?usp=sharing)
+
 **Figma**
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
