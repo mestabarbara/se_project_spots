@@ -47,6 +47,8 @@
   background-repeat: no-repeat;
   opacity: 40%;
   border: none;
+
+  cursor: pointer;
 }
 
 .card__like-button:hover {
@@ -65,7 +67,6 @@
   }
 
   .card__content {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

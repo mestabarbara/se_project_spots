@@ -12,6 +12,7 @@
   height: 190px;
   margin-right: 20px;
 
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -63,6 +64,7 @@
   margin-top: auto;
   padding: 0;
 
+  cursor: pointer;
   background: none;
   border: none;
   opacity: 70%;
@@ -89,6 +91,7 @@
   width: 149px;
   height: 52px;
 
+  cursor: pointer;
   opacity: 1;
   border-style: none;
   border: 2px;
@@ -100,7 +103,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #fcf5e5;
 }
 
