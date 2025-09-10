@@ -9,7 +9,7 @@ const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
 );
-const editProfileDescripInput = editProfileModal.querySelector(
+const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
 const editProfileCloseBtn = editProfileModal.querySelector(
@@ -28,23 +28,23 @@ const newPostCaptionInput = newPostForm.querySelector(
 // Edit Profile Listeners
 editProfileOpenBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameElement.textContent;
-  editProfileDescripInput.value = profileDescriptionElement.textContent;
-  editProfileModal.classList.add("modal_is-opened");
+  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
 
 // New Post Listeners
 newPostOpenBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 newPostExitBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
@@ -53,8 +53,8 @@ newPostForm.addEventListener("submit", handleAddCardSubmit);
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileNameElement.textContent = editProfileNameInput.value;
-  profileDescriptionElement.textContent = editProfileDescripInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  profileDescriptionElement.textContent = editProfileDescriptionInput.value;
+  closeModal(editProfileModal);
 }
 
 function handleAddCardSubmit(evt) {
@@ -64,5 +64,13 @@ function handleAddCardSubmit(evt) {
   console.log("New Post Caption: " + newPostCaptionInput.value);
 
   evt.target.reset();
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
+}
+
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
 }
