@@ -23,10 +23,6 @@ const initialCards = [
     name: "Mountain house",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
   },
-  {
-    name: "Golden Gate Bridge",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
-  },
 ];
 
 const profileNameElement = document.querySelector(".profile__name");
@@ -120,10 +116,9 @@ function getCardElement(data) {
     likeButtonEl.classList.toggle("card__like-button_active");
   });
 
-  const deleteButtonEl = cardElement.querySelector(".card__delete_button");
+  const deleteButtonEl = cardElement.querySelector(".card__delete-button");
   deleteButtonEl.addEventListener("click", function () {
     cardElement.remove();
-    cardElement = null;
   });
 
   return cardElement;
@@ -143,8 +138,8 @@ function handleAddCardSubmit(evt) {
   // console.log("New Post Caption: " + newPostCaptionInput.value);
 
   const newPost = getCardElement({
-    name: newPostImageInput.value,
-    link: newPostCaptionInput.value,
+    name: newPostCaptionInput.value,
+    link: newPostImageInput.value,
   });
 
   cardsList.prepend(newPost);

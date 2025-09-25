@@ -54,12 +54,12 @@
             <template id="card-template">
               <li class="card">
                 <button
-                  class="card__delete card__delete_button"
+                  class="card__delete card__delete-button"
                   type="button"
                 ></button>
                 <img src="" alt="" class="card__image" />
                 <div class="card__content">
-                  <h2 class="card__title">Val Thorens</h2>
+                  <h2 class="card__title"></h2>
                   <button type="button" class="card__like-button"></button>
                 </div>
               </li>
@@ -75,7 +75,7 @@
       <!-- Image Preview Hidden Modal -->
       <div class="modal" id="image-preview-modal">
         <div class="modal__popup" id="modal-image-container">
-          <img class="modal__image" src="" alt="" />
+          <img class="modal__image" src="" alt="Empty Picture" />
           <button
             type="button"
             class="modal__close-button"
@@ -103,6 +103,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
 
@@ -113,6 +114,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
 
@@ -137,6 +139,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
             </label>
 
@@ -147,6 +150,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
               />
             </label>
 

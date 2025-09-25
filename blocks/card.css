@@ -36,7 +36,7 @@
   color: rgba(33, 33, 33, 1);
 }
 
-.card__delete_button {
+.card__delete-button {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.card__delete_button:hover {
+.card__delete-button:hover {
   background-image: url(../images/delete-icon-hover.svg);
 }
 
