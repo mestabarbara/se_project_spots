@@ -64,7 +64,7 @@ const imagePreviewCloseBtn = imagePreviewModal.querySelector(
   ".modal__close-button"
 );
 const imagePreview = imagePreviewModal.querySelector(".modal__image");
-const imageCaption = imagePreviewModal.querySelector(".modal__image-caption");
+const imageCaption = imagePreviewModal.querySelector(".modal__image_caption");
 
 // Edit Profile Listeners
 editProfileOpenBtn.addEventListener("click", function () {
