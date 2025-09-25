@@ -53,6 +53,7 @@
             <!-- card template -->
             <template id="card-template">
               <li class="card">
+                <button class="card__delete_button" type="button"></button>
                 <img src="" alt="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title">Val Thorens</h2>
@@ -67,6 +68,21 @@
       <footer class="footer">
         <p class="footer__copyright">2025 &copy; Spots</p>
       </footer>
+
+      <!-- Image Preview Hidden Modal -->
+      <div class="modal" id="image-preview-modal">
+        <div class="modal__popup" id="modal-image-container">
+          <img class="modal__image" src="" alt="" />
+          <button
+            type="button"
+            class="modal__close-button"
+            id="image-close-button"
+          >
+            <img src="./images/close_image_icon.svg" alt="close out button" />
+          </button>
+          <p class="modal__image-caption">No caption inputted</p>
+        </div>
+      </div>
 
       <!-- Edit Profile hidden modal -->
       <div class="modal" id="edit-profile-modal">
