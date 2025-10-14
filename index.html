@@ -104,7 +104,10 @@
                 class="modal__input"
                 placeholder="Type your name"
                 required
+                minlength="2"
+                maxlength="40"
               />
+              <span class="modal__error">Please fill out this field.</span>
             </label>
 
             <label for="profile-description-input" class="modal__label">
@@ -115,7 +118,13 @@
                 class="modal__input"
                 placeholder="Describe yourself"
                 required
+                minlength="2"
+                maxlength="200"
               />
+              <span class="modal__error"
+                >Please lengthen this text to 2 characters or more (you are
+                currently usina 1 character).</span
+              >
             </label>
 
             <button type="submit" class="modal__submit-button">Save</button>
@@ -136,11 +145,12 @@
               Image link
               <input
                 id="new-image-input"
-                type="text"
+                type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
                 required
               />
+              <span class="modal__error"></span>
             </label>
 
             <label for="new-image-caption-input" class="modal__label">
@@ -151,7 +161,10 @@
                 class="modal__input"
                 placeholder="Type your caption"
                 required
+                minlength="2"
+                maxlength="30"
               />
+              <span class="modal__error"></span>
             </label>
 
             <button type="submit" class="modal__submit-button">Save</button>
@@ -160,5 +173,6 @@
       </div>
     </div>
     <script src="scripts/index.js"></script>
+    <script src="scripts/validation.js"></script>
   </body>
 </html>

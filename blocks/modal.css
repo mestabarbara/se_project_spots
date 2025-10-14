@@ -105,7 +105,8 @@
 }
 
 .modal__label {
-  margin: 0;
+  display: block;
+  margin: 0 0 32px;
   width: 100%;
 
   font-weight: 500;
@@ -117,8 +118,7 @@
 }
 
 .modal__input {
-  display: block;
-  margin: 8px 0 32px;
+  margin: 8px 0 0;
   padding: 16px 12px;
   width: 100%;
 
@@ -142,6 +142,20 @@
   cursor: pointer;
 }
 
+.modal__input-error {
+  border-color: red;
+}
+
+.modal__input-error:hover {
+  border-color: red;
+}
+
+.modal__error {
+  display: block;
+  color: red;
+  margin: 8px 0 0;
+}
+
 .modal__submit-button {
   max-width: 156px;
   max-height: 52px;
@@ -158,6 +172,11 @@
   border-style: none;
   background-color: rgba(33, 33, 33, 1);
   color: rgba(252, 245, 229, 1);
+}
+
+.modal__submit-button-inactive {
+  cursor: default;
+  opacity: 50%;
 }
 
 .modal__submit-button:hover {
