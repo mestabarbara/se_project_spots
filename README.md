@@ -16,7 +16,9 @@ Spots is a social media website that allows users to post pictures and share it 
 
 Check out the videos below where I describe this project and some of the challenges I faced:
 
--[Latest updates and challenges](https://drive.google.com/file/d/1yM16o2WWMlhIGa9w8yN0OF98zpoeJvG2/view?usp=sharing) -[Previous Spot Overview](https://drive.google.com/file/d/1u1kEtsxsSMpVN9-yrKzf0oP2mTzYcQnM/view?usp=sharing)
+-[Latest updates and challenges](https://drive.google.com/file/d/1yM16o2WWMlhIGa9w8yN0OF98zpoeJvG2/view?usp=sharing)
+
+-[Previous Spot Overview](https://drive.google.com/file/d/1u1kEtsxsSMpVN9-yrKzf0oP2mTzYcQnM/view?usp=sharing)
 
 **Figma**
 
