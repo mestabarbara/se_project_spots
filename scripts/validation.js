@@ -49,12 +49,12 @@ const toggleButtonState = (inputList, buttonElement, config) => {
 
 const disableButton = (buttonElement, config) => {
   buttonElement.disabled = true;
-  buttonElement.classList.add(settings.inactiveButtonClass);
+  buttonElement.classList.add(config.inactiveButtonClass);
 };
 
 const enableButton = (buttonElement, config) => {
   buttonElement.disabled = false;
-  buttonElement.classList.remove(settings.inactiveButtonClass);
+  buttonElement.classList.remove(config.inactiveButtonClass);
 };
 
 const resetValidation = (formElement, inputList, config) => {
@@ -72,7 +72,7 @@ const setEventListeners = (formElement, config) => {
   // console.log(inputList);
   // console.log(buttonElement);
 
-  toggleButtonState(inputList, buttonElement);
+  toggleButtonState(inputList, buttonElement, config);
 
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {

@@ -75,7 +75,7 @@
       <!-- Image Preview Hidden Modal -->
       <div class="modal" id="image-preview-modal">
         <div class="modal__popup" id="modal-image-container">
-          <img class="modal__image" src="" alt="Empty Picture" />
+          <img class="modal__image" alt="Empty Picture" />
           <button
             type="button"
             class="modal__close-button"
@@ -83,7 +83,7 @@
           >
             <img src="./images/close_image_icon.svg" alt="close out button" />
           </button>
-          <p class="modal__image_caption">No caption inputted</p>
+          <p class="modal__image-caption">No caption inputted</p>
         </div>
       </div>
 
@@ -95,7 +95,7 @@
           </button>
           <h2 class="modal__title">Edit Profile</h2>
 
-          <form class="modal__form">
+          <form class="modal__form" novalidate>
             <label for="profile-name-input" class="modal__label">
               Name
               <input
@@ -106,7 +106,6 @@
                 required
                 minlength="2"
                 maxlength="40"
-                novalidate
               />
               <span class="modal__error">Please fill out this field.</span>
             </label>
@@ -121,7 +120,6 @@
                 required
                 minlength="2"
                 maxlength="200"
-                novalidate
               />
               <span class="modal__error"
                 >Please lengthen this text to 2 characters or more (you are
@@ -142,7 +140,7 @@
           </button>
           <h2 class="modal__title">New Post</h2>
 
-          <form class="modal__form">
+          <form class="modal__form" novalidate>
             <label for="new-image-input" class="modal__label">
               Image link
               <input
@@ -151,7 +149,6 @@
                 class="modal__input"
                 placeholder="Paste a link to the picture"
                 required
-                novalidate
               />
               <span class="modal__error"></span>
             </label>
@@ -166,7 +163,6 @@
                 required
                 minlength="2"
                 maxlength="30"
-                novalidate
               />
               <span class="modal__error"></span>
             </label>
