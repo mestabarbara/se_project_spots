@@ -54,6 +54,7 @@ const newPostImageInput = newPostForm.querySelector("#new-image-input");
 const newPostCaptionInput = newPostForm.querySelector(
   "#new-image-caption-input"
 );
+const newPostSubmitButton = newPostModal.querySelector(".modal__submit-button");
 
 const imagePreviewModal = document.querySelector("#image-preview-modal");
 const imagePreviewCloseBtn = imagePreviewModal.querySelector(
@@ -66,6 +67,11 @@ const imageCaption = imagePreviewModal.querySelector(".modal__image_caption");
 editProfileOpenBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings
+  );
   openModal(editProfileModal);
 });
 
@@ -145,15 +151,27 @@ function handleAddCardSubmit(evt) {
   cardsList.prepend(newPost);
 
   evt.target.reset();
+  disableButton(newPostSubmitButton, settings);
   closeModal(newPostModal);
+}
+
+function handleEscClose(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
 }
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscClose);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscClose);
 }
 
 // MAIN Execution
@@ -163,4 +181,15 @@ initialCards.forEach(function (currentVal) {
   // console.log(currentVal.link);
   const cardEl = getCardElement(currentVal);
   cardsList.append(cardEl);
+});
+
+const modals = document.querySelectorAll(".modal");
+
+modals.forEach((modal) => {
+  modal.addEventListener("mousedown", function (evt) {
+    // Check if the click was on the overlay (outside modal content)
+    if (evt.target.classList.contains("modal_is-opened")) {
+      closeModal(modal);
+    }
+  });
 });
