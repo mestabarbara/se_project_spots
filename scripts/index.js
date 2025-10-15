@@ -187,7 +187,6 @@ const modals = document.querySelectorAll(".modal");
 
 modals.forEach((modal) => {
   modal.addEventListener("mousedown", function (evt) {
-    // Check if the click was on the overlay (outside modal content)
     if (evt.target.classList.contains("modal_is-opened")) {
       closeModal(modal);
     }
