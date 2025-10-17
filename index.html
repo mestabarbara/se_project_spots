@@ -75,10 +75,10 @@
       <!-- Image Preview Hidden Modal -->
       <div class="modal" id="image-preview-modal">
         <div class="modal__popup" id="modal-image-container">
-          <img class="modal__image" alt="Empty Picture" />
+          <img class="modal__image" src="#" alt="Empty Picture" />
           <button
             type="button"
-            class="modal__close-button"
+            class="modal__close-button modal__close-button_preview"
             id="image-close-button"
           >
             <img src="./images/close_image_icon.svg" alt="close out button" />
@@ -90,7 +90,10 @@
       <!-- Edit Profile hidden modal -->
       <div class="modal" id="edit-profile-modal">
         <div class="modal__popup">
-          <button type="button" class="modal__close-button">
+          <button
+            type="button"
+            class="modal__close-button modal__close-button_profile"
+          >
             <img src="./images/close_icon.svg" alt="close out button" />
           </button>
           <h2 class="modal__title">Edit Profile</h2>
@@ -135,7 +138,10 @@
       <!-- New post hidden modal -->
       <div class="modal" id="new-post-modal">
         <div class="modal__popup">
-          <button type="button" class="modal__close-button">
+          <button
+            type="button"
+            class="modal__close-button modal__close-button_type_newpost"
+          >
             <img src="./images/close_icon.svg" alt="close out button" />
           </button>
           <h2 class="modal__title">New Post</h2>

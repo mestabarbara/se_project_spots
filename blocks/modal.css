@@ -52,13 +52,12 @@
   padding: 4px 8px;
   max-width: 214px;
   width: fit-content;
-  height: 32px;
+  max-height: 32px;
 
   border-radius: 8px;
   background: rgba(33, 33, 33, 1);
   color: rgba(255, 255, 255, 1);
 
-  font-family: Poppins;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
@@ -92,7 +91,7 @@
   cursor: pointer;
 }
 
-#image-close-button {
+.modal__close-button_preview {
   position: absolute;
   top: 0;
   right: -52.5px;
@@ -212,7 +211,7 @@
     max-width: none;
   }
 
-  #image-close-button {
+  .modal__close-button_preview {
     top: -48px;
     right: 0;
   }
