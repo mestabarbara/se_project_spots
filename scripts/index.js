@@ -1,3 +1,5 @@
+import { settings, enableValidation } from "./validation.js";
+
 const initialCards = [
   {
     name: "Val Thorens",
@@ -27,7 +29,7 @@ const initialCards = [
 
 const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(
-  ".profile__description"
+  ".profile__description",
 );
 
 const cardsList = document.querySelector(".cards__list");
@@ -37,13 +39,13 @@ const editProfileOpenBtn = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
-  "#profile-name-input"
+  "#profile-name-input",
 );
 const editProfileDescriptionInput = editProfileModal.querySelector(
-  "#profile-description-input"
+  "#profile-description-input",
 );
 const editProfileCloseBtn = editProfileModal.querySelector(
-  ".modal__close-button"
+  ".modal__close-button",
 );
 
 const newPostOpenBtn = document.querySelector(".profile__add-button");
@@ -52,13 +54,13 @@ const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostExitBtn = newPostModal.querySelector(".modal__close-button");
 const newPostImageInput = newPostForm.querySelector("#new-image-input");
 const newPostCaptionInput = newPostForm.querySelector(
-  "#new-image-caption-input"
+  "#new-image-caption-input",
 );
 const newPostSubmitButton = newPostModal.querySelector(".modal__submit-button");
 
 const imagePreviewModal = document.querySelector("#image-preview-modal");
 const imagePreviewCloseBtn = imagePreviewModal.querySelector(
-  ".modal__close-button"
+  ".modal__close-button",
 );
 const imagePreview = imagePreviewModal.querySelector(".modal__image");
 const imageCaption = imagePreviewModal.querySelector(".modal__image-caption");
@@ -70,7 +72,7 @@ editProfileOpenBtn.addEventListener("click", function () {
   resetValidation(
     editProfileForm,
     [editProfileNameInput, editProfileDescriptionInput],
-    settings
+    settings,
   );
   openModal(editProfileModal);
 });
@@ -192,3 +194,5 @@ modals.forEach((modal) => {
     }
   });
 });
+
+enableValidation(settings);
