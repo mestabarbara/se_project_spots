@@ -21,13 +21,17 @@
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/logo.svg" alt="Spots Logo" class="header__logo" />
+        <img
+          src="<%=require('./images/logo.svg')%>"
+          alt="Spots Logo"
+          class="header__logo"
+        />
       </header>
 
       <main class="content">
         <section class="profile">
           <img
-            src="./images/avatar.jpg"
+            src="<%=require('./images/avatar.jpg')%>"
             alt="profile picture for user"
             class="profile__avatar"
           />
@@ -36,13 +40,16 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-button">
-              <img src="./images/edit-icon.svg" alt="pencil icon" />
+              <img
+                src="<%=require('./images/edit-icon.svg')%>"
+                alt="pencil icon"
+              />
               Edit Profile
             </button>
           </div>
 
           <button type="button" class="profile__add-button">
-            <img src="./images/plus-icon.svg" alt="plus icon" />
+            <img src="<%=require('./images/plus-icon.svg')%>" alt="plus icon" />
             New Post
           </button>
         </section>
@@ -80,7 +87,10 @@
             class="modal__close-button modal__close-button_preview"
             id="image-close-button"
           >
-            <img src="./images/close_image_icon.svg" alt="close out button" />
+            <img
+              src="<%=require('./images/close_image_icon.svg')%>"
+              alt="close out button"
+            />
           </button>
           <p class="modal__image-caption">No caption inputted</p>
         </div>
@@ -93,7 +103,10 @@
             type="button"
             class="modal__close-button modal__close-button_profile"
           >
-            <img src="./images/close_icon.svg" alt="close out button" />
+            <img
+              src="<%=require('./images/close_icon.svg')%>"
+              alt="close out button"
+            />
           </button>
           <h2 class="modal__title">Edit Profile</h2>
 
@@ -141,7 +154,10 @@
             type="button"
             class="modal__close-button modal__close-button_type_newpost"
           >
-            <img src="./images/close_icon.svg" alt="close out button" />
+            <img
+              src="<%=require('./images/close_icon.svg')%>"
+              alt="close out button"
+            />
           </button>
           <h2 class="modal__title">New Post</h2>
 
